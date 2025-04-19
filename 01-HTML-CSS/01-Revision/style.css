@@ -1,0 +1,19 @@
+.container{
+    border: 2px solid black;
+    /* padding: 50px; */
+    margin: 50px;
+    height: 300px;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.children{
+    border: 2px solid red;
+}
+
+
+/* display: flex */
+/* flex-direction: row */
