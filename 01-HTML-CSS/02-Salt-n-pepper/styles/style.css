@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+    font-family: futurak;
+    src: url(../assets/fonts/futurak.ttf);
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+  --red: #ed1c24;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+}
+
+/* navbar started */
+.logo-image {
+  width: 165px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 18px;
+}
+.nav-single-item {
+  cursor: pointer;
+}
+
+.franchise-btn {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+.order-btn {
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.arrow-icon {
+  color: var(--red);
+}
+
+.arrow-span {
+  padding: 5px 8px;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+.menu-icon{
+    color: var(--white);
+    font-size: 26px;
+}
+
+.menu-container{
+    display: none;
+}
+/* navbar ended */
+
+.carousel-image{
+    width: 100%;
+}
+
+
+/* Restaurants container started */
+.restaurant-heading{
+    text-align: center;
+    font-weight: 300;
+    font-size: 42px;
+    margin-top: 50px;
+}
+
+.restaurant-para{
+    text-align: center;
+    color: #ffffffb3;
+    margin: 10px 0px;
+}
+
+.futurak-font-heading{
+    font-family: futurak;
+    font-size: 55px;
+}
+.brand-image{
+    background-color: var(--white);
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 260px;
+    height: 140px;
+}
+.brand-children{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.order-now-btn{
+    background-color: transparent;
+  color: #ffffffb3;
+  border: 1px solid #ffffffb3;
+  padding: 10px 50px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.brands-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px;
+}
+/* Restaurants container ended */
+
+
+
+/* responsive media query */
+
+@media(max-width: 1000px){
+    .menu-container{
+        display: block;
+    }
+    .nav-items{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding: 0px 50px;
+    }
+}
