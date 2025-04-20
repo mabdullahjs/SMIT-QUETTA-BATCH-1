@@ -1,0 +1,22 @@
+ td {
+    border: 1px solid black;
+    
+}
+
+
+td{
+    width: 80px;
+    text-align: center;
+}
+
+.b-none{
+    border: none;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+.bg-purple{
+    background-color: purple;
+}
