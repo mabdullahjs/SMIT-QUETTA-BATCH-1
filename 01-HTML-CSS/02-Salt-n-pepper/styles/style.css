@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @font-face {
-    font-family: futurak;
-    src: url(../assets/fonts/futurak.ttf);
-  }
+  font-family: futurak;
+  src: url(../assets/fonts/futurak.ttf);
+}
 
 * {
   margin: 0;
@@ -69,56 +69,55 @@ body {
   background-color: var(--white);
   border-radius: 20px;
 }
-.menu-icon{
-    color: var(--white);
-    font-size: 26px;
+.menu-icon {
+  color: var(--white);
+  font-size: 26px;
 }
 
-.menu-container{
-    display: none;
+.menu-container {
+  display: none;
 }
 /* navbar ended */
 
-.carousel-image{
-    width: 100%;
+.carousel-image {
+  width: 100%;
 }
-
 
 /* Restaurants container started */
-.restaurant-heading{
-    text-align: center;
-    font-weight: 300;
-    font-size: 42px;
-    margin-top: 50px;
+.restaurant-heading {
+  text-align: center;
+  font-weight: 300;
+  font-size: 42px;
+  margin-top: 50px;
 }
 
-.restaurant-para{
-    text-align: center;
-    color: #ffffffb3;
-    margin: 10px 0px;
+.restaurant-para {
+  text-align: center;
+  color: #ffffffb3;
+  margin: 10px 0px;
 }
 
-.futurak-font-heading{
-    font-family: futurak;
-    font-size: 55px;
+.futurak-font-heading {
+  font-family: futurak;
+  font-size: 55px;
 }
-.brand-image{
-    background-color: var(--white);
-    padding: 20px 30px;
-    border-radius: 10px;
-    width: 260px;
-    height: 140px;
+.brand-image {
+  background-color: var(--white);
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 260px;
+  height: 140px;
 }
-.brand-children{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+.brand-children {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
-.order-now-btn{
-    background-color: transparent;
+.order-now-btn {
+  background-color: transparent;
   color: #ffffffb3;
   border: 1px solid #ffffffb3;
   padding: 10px 50px;
@@ -126,28 +125,43 @@ body {
   font-size: 16px;
 }
 
-.brands-container{
-    display: flex;
+.brands-container {
+  /* display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 30px;
+    margin: 30px; */
+
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  justify-content: center;
 }
 /* Restaurants container ended */
 
-
-
 /* responsive media query */
 
-@media(max-width: 1000px){
-    .menu-container{
-        display: block;
-    }
-    .nav-items{
-        display: none;
-    }
-    .navbar{
-        justify-content: space-between;
-        padding: 0px 50px;
-    }
+@media (max-width: 1000px) {
+  .menu-container {
+    display: block;
+  }
+  .nav-items {
+    display: none;
+  }
+  .navbar {
+    justify-content: space-between;
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .brands-container {
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .brands-container {
+    grid-template-columns: repeat(1, 300px);
+    gap: 20px;
+  }
 }
