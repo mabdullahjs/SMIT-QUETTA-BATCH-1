@@ -1,0 +1,122 @@
+/* .heading {
+    text-align: center;
+}
+#head-one{
+    text-align: end;
+    background-color: red;
+    color: white;
+} */
+/* 
+#first-heading{
+    color: orange !important;
+    text-align: center;
+}
+*{
+    color: gray;
+}
+
+h1, p{
+    color: red;
+}
+
+.heading {
+    color: purple;
+    text-align: end;
+} */
+
+/* 
+!important ko sabsa zyada
+inline styling
+id 
+class
+type selector
+universal selector
+
+*/
+
+/* .inside-div{
+    background-color: red;
+    color: white;
+} */
+/* 
+div > ul {
+    background-color: red;
+    color: white;
+} */
+
+/* .selector {
+    border: 1px solid black;
+} */
+
+/* child Selector */
+/* .selector > p{
+    color: red;
+} */
+/* Descendant Selector */
+/* .selector  p{
+    color: red;
+} */
+
+/* Adjacent Sibling Selector */
+
+/* h1 + p{
+    color: red;
+} */
+
+/* General Sibling Selector */
+
+/* h1 ~ p{
+    color: red;
+} */
+
+/* Inheritance properties
+
+
+color
+
+font-family
+
+font-size
+
+visibility
+
+line-height
+
+letter-spacing
+
+text-align
+
+*/
+
+/* .container {
+    color: red;
+    text-align: center;
+} */
+
+/* body {
+    background-color: #000000;
+} */
+/* 
+h1 {
+  color: #00bcff;
+  color: rgba(255, 0, 0, 0.5);
+  opacity: 0.1;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #c3c1bf;
+}
+
+h1{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+.colors{
+    margin: 0px 20px;
+}
