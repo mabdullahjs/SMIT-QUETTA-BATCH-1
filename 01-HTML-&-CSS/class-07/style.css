@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+/* Display
+margin auto
+block
+inline
+inline-block
+none
+visibility
+centering image
+
+inline element pa kabhi bhi margin top or bottom or width kaam nahi krta
+
+*/
+
+li {
+  display: inline;
+  margin-left: 40px;
+  margin-top: 40px;
+  /* padding-top: 40px; */
+
+}
+
+h1 {
+  margin: 40px;
+  padding: 20px;
+}
+
+a {
+    /* display: block; */
+    /* width: 600px; */
+    display: none;
+    /* visibility: hidden; */
+}
+
+img{
+    width: 200px;
+    /* display: block;
+    margin: 0 auto; */
+}
+
+.img-container{
+    text-align: center;
+}
