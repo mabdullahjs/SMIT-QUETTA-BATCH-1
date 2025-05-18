@@ -1,0 +1,52 @@
+/* h1 {
+    border: 10px solid black;
+    padding: 30px;
+    margin: 20px;
+    https://9elements.github.io/fancy-border-radius/#54.84.76.61--.
+    border-radius:84% 16% 39% 61% / 54% 76% 24% 46% ;
+    border-image: url('./assets/border.png') 30 stretch;
+} */
+
+/* postion values
+relative
+absolute
+fixed
+sticky
+
+
+*/
+
+.parent{
+    width: 300px;
+    height: 150vh;
+    border: 1px solid black;
+    margin: 300px auto;
+    margin-bottom: 800px;
+}
+
+.children {
+    width: 100px;
+    height: 100px;
+}
+/* relative parent ka relative ghoomta ha */
+#red{
+    background-color: red;
+    position: relative;
+    left: 30px;
+    top: 200px;
+
+}
+#green{
+    background-color: green;
+    /* position: absolute;
+    right: 0px;
+    bottom: 0px; */
+    position: sticky;
+    top: 300px;
+}
+#blue{
+    background-color: blue;
+    position: fixed;
+    left: 0px;
+
+}
