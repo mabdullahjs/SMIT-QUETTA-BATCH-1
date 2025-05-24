@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.analog-text {
+  font-size: 5rem;
+}
+
+ul {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 50%;
+  margin: 80px auto;
+  text-align: center;
+}
+
+li {
+  text-transform: uppercase;
+  display: inline;
+  font-size: 3rem;
+  margin: 0px 30px;
+  font-weight: bold;
+}
+
+.piano-image{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.bottom-para{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 60%;
+    text-align: center;
+    margin: 50px auto;
+}
