@@ -83,11 +83,25 @@ console.log("Hello Javascript"); */
 
 
 
+// console.log("hello world")
+// console.log(12)
+// console.log(true)
 
+
+// var username = "Muhammad abdullah";
+// var age = 21;
+// var isLoggedIn = true
+
+// console.log(typeof(isLoggedIn))
+
+
+// var username = "abc";
+// var username = "usman"
+// username = "ammar"
+// console.log(username);
 
 
 // concatinate
-// variable names
 
 
 
