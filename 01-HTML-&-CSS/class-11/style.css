@@ -1,0 +1,43 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+} */
+
+
+.parent {
+    border: 2px solid black;
+    height: 300px;
+    padding: 30px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-around;
+    align-items: stretch; */
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.children {
+    border: 1px solid red;
+    padding: 30px;
+}
+
+#box-1{
+    flex-grow: 1;
+}
+#box-2{
+    flex-grow: 3;
+}
+#box-3{
+    flex-grow: 1;
+}
+#box-4{
+    flex-grow: 1;
+    align-self: self-start;
+}

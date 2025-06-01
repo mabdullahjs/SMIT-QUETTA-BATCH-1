@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --red: #ed1c24;
+  --light-grey: #ffffffb3
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+@font-face {
+    font-family: futurak;
+    src: url('./fonts/futurak.ttf');
+}
+
+
+/* navbar started */
+.logo-image{
+    width: 165px;
+}
+.nav-item{
+    font-size: 1.7rem;
+    color: var(--white);
+    text-decoration: none;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.nav-parent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.franchise-btn{
+    background-color: var(--black);
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+}
+.order-btn{
+    background-color: var(--red);
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    border: none;
+}
+.icon-span{
+    background-color: var(--white);
+    color: var(--red);
+    padding: 5px 8px;
+    border-radius: 20px;
+}
+/* navbar ended */
+
+
+/* carousel container started */
+.carousel-image{
+    width: 100%;
+}
+/* carousel container ended */
+
+
+.our-brand-heading{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-top: 50px;
+}
+.font-heading{
+    font-size: 6rem;
+    font-family: futurak;
+
+}
+.our-brand-para{
+    color: var(--light-grey);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
+}
+.brand-children-image{
+    width: 250px;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 20px;
+    height: 140px;
+}
+.brand-children{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.brand-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 50px;
+}
