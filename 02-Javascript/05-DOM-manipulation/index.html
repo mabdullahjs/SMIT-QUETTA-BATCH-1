@@ -22,6 +22,12 @@
             font-weight: bold;
             text-align: center;
         }
+        p {
+            background-color: black;
+            color: white;
+            font-size: 1.5rem;
+            padding: 20px;
+        }
     </style>
   </head>
   <body>
@@ -43,11 +49,34 @@
     <!-- <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum repudiandae quos possimus ducimus asperiores aut itaque dolorum perspiciatis nisi modi, illum mollitia impedit est architecto fuga deserunt, ea adipisci.</p> -->
 
 
-    <input type="text" id="nameInput" placeholder="enter your fullname">
+    <!-- <input type="text" id="nameInput" placeholder="enter your fullname">
     <button onclick="getuserVal()">submit</button>
     <div id="result">
         
+    </div> -->
+
+
+    <!-- <input type="number" placeholder="enter num1 " id="num1">
+    <input type="number" placeholder="enter num2 " id="num2">
+    <button onclick="total()">sum</button>
+
+    <h1 id="result"></h1> -->
+    <!-- <img src="https://plus.unsplash.com/premium_photo-1665657351698-7d61f4b57ddc?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="400px" alt="" id="image">
+    <button onclick="imageChange()">change image</button> -->
+
+
+    <div class="btns">
+        <button onclick="changeColor('red')">red</button>
+        <button onclick="changeColor('green')">green</button>
+        <button onclick="changeColor('blue')">blue</button>
+        <button onclick="changeColor('orange')">orange</button>
+        <button onclick="changeColor('purple')">purple</button>
+        <button onclick="changeColor('white')">white</button>
+        <button onclick="changeColor('yellow')">yellow</button>
     </div>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ratione beatae. Tempora alias provident nostrum esse consequatur perferendis ea. Commodi labore nostrum magnam accusamus sapiente voluptas? Tempore qui natus quod.</p>
+    <button id="btn" onclick="togglePara()">toggle off</button>
 
     <script src="app.js"></script>
   </body>
