@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM manipulation</title>
-</head>
-<body>
-    <h1 id="heading">Hello Abdullah</h1>
-    <h2 id="heading-two">available</h2>
+    <style>
+        .counter{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            font-size: 5rem;
+        }
+        .counter-btn{
+            width: 80px;
+            font-size: 2rem;
+        }
+        #result{
+            margin-top: 30px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Hello DOM manipulation</h1>
+    <!-- <h2 id="heading-two">available</h2> -->
     <!-- <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maiores impedit iure tenetur dolor est inventore eligendi, similique harum modi sint voluptas rem fuga, porro iusto, quos aliquam rerum pariatur.</p> -->
 
-    <button onclick="changedText()">change</button>
+    <!-- <button onclick="changedText()">change</button> -->
+
+    <!-- <h1 id="heading-one">hello Abdullah</h1>
+    <button onclick="changeText()">changetext</button> -->
+
+    <!-- <div class="counter">
+      <button onclick="lessCounter()" class="counter-btn">-</button>
+      <h1 id="counter-heading">0</h1>
+      <button onclick="addCounter()" class="counter-btn">+</button>
+    </div> -->
+
+    <!-- <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum repudiandae quos possimus ducimus asperiores aut itaque dolorum perspiciatis nisi modi, illum mollitia impedit est architecto fuga deserunt, ea adipisci.</p> -->
+
+
+    <input type="text" id="nameInput" placeholder="enter your fullname">
+    <button onclick="getuserVal()">submit</button>
+    <div id="result">
+        
+    </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
