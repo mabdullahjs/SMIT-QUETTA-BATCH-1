@@ -1,0 +1,49 @@
+/* body {
+    background-color: black;
+    color: white;
+}
+
+@media(min-width: 1000px){
+    body {
+        background-color: red;
+    }
+    h1 {
+        text-decoration: underline;
+    }
+}
+
+@media(min-width: 1500px){
+    body{
+        background-color: purple;
+    }
+} */
+
+
+
+/* har component complete tab tk nahi hoga jab tk wo responsive na hojaye */
+/* layouting ka liya flexbox ya grid use krna ha */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 3rem;
+}
+
+@media(max-width: 600px){
+    html {
+        font-size: 30%;
+    }
+}

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* navbar started */
+.logo-image{
+    width: 165px;
+}
+.nav-item{
+    font-size: 2rem;
+}
+.nav-btn{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0px;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.menu-bar{
+    font-size: 3rem;
+    display: none;
+}
+
+@media(max-width: 1000px){
+    .items{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .navbar-container{
+        justify-content: space-between;
+        margin: 15px 30px;
+    }
+}
+/* navbar ended */
+
+
+
+/* html + css quiz */
+/* 6 web design */
