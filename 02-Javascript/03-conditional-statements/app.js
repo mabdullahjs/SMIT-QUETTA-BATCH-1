@@ -49,8 +49,6 @@
 //   console.log("admission nahi milaiga");
 // }
 
-
-
 // Check if a number is greater than 10 and less than 20.
 
 // var num = 12;
@@ -58,7 +56,7 @@
 //     console.log("number is greater than 10 and less than 20");
 // } else {
 //     console.log("obhai kiya kr rha ha?");
-    
+
 // }
 
 // Check if a user is either an "admin" or a "moderator".
@@ -69,7 +67,7 @@
 //     console.log("user admin haa");
 // }else {
 //     console.log("user moderator ha");
-    
+
 // }
 
 // Check if a number is not zero and is an even number.
@@ -81,17 +79,16 @@
 //     console.log("number is not even");
 // }
 
-
 // Check if either a username or an email is provided during login.
 
 // var userGiven = true
 
 // if(userGiven){
 //     console.log("given");
-    
+
 // }else {
 //     console.log("not given");
-    
+
 // }
 
 // Check if a person qualifies for a loan (income > 30000 or has collateral).
@@ -102,7 +99,7 @@
 // if(income >= 30000 || collateral){
 //     console.log("lelo udhaar");
 // }else{
-//     console.log("udhaar band haa, maang ka sharminda na krain");   
+//     console.log("udhaar band haa, maang ka sharminda na krain");
 // }
 
 // Check if a student passed all subjects (math, English, science ≥ 50).
@@ -115,10 +112,8 @@
 //     console.log("pass hoo");
 // }else{
 //     console.log("rickshaw chaalao");
-    
+
 // }
-
-
 
 // Check if a character is a vowel (a, e, i, o, u) using ||.
 
@@ -129,8 +124,6 @@
 // }else{
 //     console.log("vowel nahi haa");
 // }
-
-
 
 // Given a person's age and membership status:
 
@@ -153,9 +146,8 @@
 //     console.log("Premium Discount");
 // }else {
 //     console.log("chalo shaba katto");
-    
-// }
 
+// }
 
 // Check a person’s eligibility to enter a contest:
 
@@ -175,20 +167,60 @@
 
 // "Banned from contest"
 
+// var age = 19;
+// var country = 'India';
+// var isBanned = false;
+
+// if(age >= 18 && age <= 35 && (country === 'Pakistan' || country === "India") && isBanned === false){
+//     console.log("eligible haa");
+
+// } else if(!(age >= 18 && age <= 35)){
+//     console.log("Not eligible due to age");
+// }  else if(isBanned){
+//     console.log("Banned from contest");
+// } else {
+//     console.log("Not eligible due to region");
+// }
+
+// var input = document.querySelector("#input");
+// function checkSpeed(){
+//     console.log(input.value);
+//     var userSpeed = +input.value;
+
+//     if(userSpeed < 30){
+//         console.log("Too slow");
+
+//     } else if(userSpeed >= 30 && userSpeed <= 60){
+//         console.log("Safe speed");
+
+//     } else if(userSpeed >= 61 && userSpeed <= 100){
+//         console.log("Speeding");
+
+//     } else {
+//         console.log("Dangerously fast");
+
+//     }
+
+// }
+
+// var lateDays = 23;
+
+// if (lateDays === 0) {
+//   console.log("0$ fine");
+// } else if (lateDays <= 5) {
+//   console.log("1$ fine total fine is ==> " + lateDays * 1);
+// } else if (lateDays <= 10) {
+//   console.log("2$ fine total fine is ==> " + lateDays * 2);
+// } else if (lateDays >= 11) {
+//   console.log("5$ fine total fine is ==> " + lateDays * 5);
+// }
 
 
-var age = 19;
-var country = 'India';
-var isBanned = false;
+
+// var hour = 13
 
 
-if(age >= 18 && age <= 35 && (country === 'Pakistan' || country === "India") && isBanned === false){
-    console.log("eligible haa");
+// if(hour >= 6 && hour <= 10){
+//     console.log("breakfast time");
     
-} else if(!(age >= 18 && age <= 35)){
-    console.log("Not eligible due to age");
-}  else if(isBanned){
-    console.log("Banned from contest");
-} else {
-    console.log("Not eligible due to region");
-}
+// }

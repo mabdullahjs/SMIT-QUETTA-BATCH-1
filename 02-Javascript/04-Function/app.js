@@ -73,37 +73,81 @@
 //   var obtainedMarks = num1 + num2 + num3 + num4;
 
 //   var percentage = (obtainedMarks / totalMarks) * 100;
-  
-//   return "candidate name is " + username + " and his percentage is " + percentage + "%."  
+
+//   return "candidate name is " + username + " and his percentage is " + percentage + "%."
 // }
 
 // console.log(calculatePercentage("abdullah", 80, 80, 40, 30));
 
-
-
-
-
-
-
-
-
-
-
 // local variable
 // global variable'
 
-var username = "abdullah" // global variable
-function greetUser(){
-  var lastName = "khan" // local variable
-  console.log("hello " + username + lastName);
+// var username = "abdullah" // global variable
+// function greetUser(){
+//   var lastName = "khan" // local variable
+//   console.log("hello " + username + lastName);
+// }
+
+// console.log(lastName);
+
+// greetUser()
+
+// ES6
+
+// var
+// let
+// const
+
+// var city = "karachi";
+// var city = "quetta"; // redeclare
+// city = "Lahore" //reassign
+
+// let username = "abdullah"
+// // let username = "Usman" // redeclare x
+// username = "Usman"
+// console.log(username);
+
+// let username;
+// username = "abdullah"
+
+// const username = "Abdullah"
+// redeclare reassign x
+
+
+// | Value        | Description                |
+// | ------------ | -------------------------- |
+// | `false`      | The Boolean `false` itself |
+// | `0`          | The number zero            |
+// | `-0`         | Negative zero              |
+// | `""` or `''` | Empty string               |
+// | `null`       | Null value                 |
+// | `undefined`  | Undefined value            |
+// | `NaN`        | Not-a-Number               |
+
+
+
+// 5 + 4 + 3 + 2 + 1
+
+// recurrsion
+
+function recursion(num) {
+  if (num === 0) {
+    return 0;
+  }
+  return num + recursion(num - 1);
 }
 
-console.log(lastName);
+// recursion(5)
+// → 5 + recursion(4)
+// → 5 + (4 + recursion(3))
+// → 5 + (4 + (3 + recursion(2)))
+// → 5 + (4 + (3 + (2 + recursion(1))))
+// → 5 + (4 + (3 + (2 + (1 + recursion(0)))))
+// → 5 + (4 + (3 + (2 + (1 + 0))))
+// → 5 + 4 + 3 + 2 + 1 + 0
+// → 15
 
-greetUser()
-
-
-
-
+console.log(recursion(5));
+console.log(5 + 4 + 3 + 2 + 1);
 
 
