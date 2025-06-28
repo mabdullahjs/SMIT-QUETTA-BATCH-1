@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,13 +15,15 @@ body {
 }
 
 /* navbar started */
-.logo-image{
+.logo-image {
     width: 165px;
 }
-.nav-item{
+
+.nav-item {
     font-size: 2rem;
 }
-.nav-btn{
+
+.nav-btn {
     background-color: transparent;
     border: 1px solid white;
     padding: 10px 30px;
@@ -29,38 +31,60 @@ body {
     font-size: 1.5rem;
     color: white;
 }
-.navbar-container{
+
+.navbar-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 15px 0px;
 }
-.items{
+
+.items {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.menu-bar{
+
+.menu-bar {
     font-size: 3rem;
     display: none;
 }
 
-@media(max-width: 1000px){
-    .items{
+@media(max-width: 1000px) {
+    .items {
         display: none;
     }
-    .menu-bar{
+
+    .menu-bar {
         display: block;
     }
-    .navbar-container{
+
+    .navbar-container {
         justify-content: space-between;
         margin: 15px 30px;
     }
 }
+
 /* navbar ended */
 
 
+.calculator-screen {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    border: none;
+    background: #252525;
+    color: #fff;
+    text-align: right;
+    font-size: 2rem;
+    border-radius: 6px;
+    margin-left: -10px;
+    margin: 0 0 5px 0;
+    padding: 0 10px;
+    overflow-x: auto;
+}
 
 /* html + css quiz */
 /* 6 web design */
