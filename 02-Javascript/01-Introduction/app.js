@@ -44,12 +44,12 @@
 
 
 
-var province = "Balochistan"; // declaration and initialization
-console.log(province);
-province = "Sindh"; // reassign
-console.log(province);
-var province = "Punjab"; // redeclare
-console.log(province);
+// var province = "Balochistan"; // declaration and initialization
+// console.log(province);
+// province = "Sindh"; // reassign
+// console.log(province);
+// var province = "Punjab"; // redeclare
+// console.log(province);
 
 
 
@@ -98,3 +98,4 @@ console.log(province);
 
 
 
+// console.log("hello world");
