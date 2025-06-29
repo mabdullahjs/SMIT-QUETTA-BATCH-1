@@ -107,11 +107,53 @@
     
 // }
 
-const result = document.querySelector("#result");
+// const result = document.querySelector("#result");
 
-const cities = ["Karachi", "Lahore", "Quetta", "Islamabad", "Peshawar"];
+// const cities = ["Karachi", "Lahore", "Quetta", "Islamabad", "Peshawar"];
 
-for(let i = 0; i < cities.length; i++){
-    console.log(cities[i]);
-    result.innerHTML += `<p>${cities[i]}</p>`;
-}
+// for(let i = 0; i < cities.length; i++){
+//     console.log(cities[i]);
+//     result.innerHTML += `<p>${cities[i]}</p>`;
+// }
+
+
+// break & continue
+
+
+// for(let i = 0; i < 10; i++){
+//     console.log(i);
+//     if(i == 5){
+//         console.log("loop is breaked at 5");
+//         break 
+//     }
+// }
+
+
+// for(let i = 0; i < 10; i++){
+//     if(i === 5){
+//         // console.log("loop is breaked at 5");
+//         continue 
+//     }
+//     console.log(i);
+   
+// }
+
+
+
+
+
+
+// let i = 11;
+// while(i < 10){
+//     console.log(i);
+//     i++    
+// }
+
+
+
+// let i = 11
+// do {
+//     console.log(i);
+//     i++
+    
+// } while (i < 10);
