@@ -157,3 +157,81 @@
 //     i++
     
 // } while (i < 10);
+
+
+
+
+
+// for(let i = 1; i <= 10; i++){
+//     console.log(`2 * ${i} = ${2 * i}`);
+    
+// }
+
+
+
+// for(let i = 1; i <= 10; i++){
+//     console.log(`2 * ${i} = ${2 * i}`);
+//     if(i === 5){
+//         console.log("loop is breaked at 5");
+//         break;
+//     }
+// }
+
+
+// for(let i = 1; i <= 10; i++){
+//     if(i === 5){
+//         console.log("loop is breaked at 5");
+//         continue;
+//     }
+//     console.log(`2 * ${i} = ${2 * i}`);
+    
+// }
+
+
+
+// let i = 1;
+// while(i <= 10){
+//     console.log(`2 * ${i} = ${2 * i}`);
+//     i++
+// }
+
+
+// let i = 111
+// do {
+//     console.log(`2 * ${i} = ${2 * i}`);
+//     i++;
+// } while (i <= 10);
+
+
+
+// const div = document.querySelector("#result");
+// let fruits = ["apple", "banana", "orange", "mango", "grape"];
+
+// for(let i = 0; i < fruits.length; i++){
+//     console.log(fruits[i], i);
+//     div.innerHTML += `<p>${fruits[i]}</p>`;
+    
+// }
+
+// let arr = [0, 1, 0, 3, 0, 5]
+// let newArr = [];
+
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i] !== 0){
+//         newArr.push(arr[i]);
+//     }else {
+//         newArr.push("non zero")
+//     }
+    
+// }
+
+// console.log(newArr);
+
+
+// splice
+// array loop
+// document.querySelector (forms , elements)
+
+
+// Given an array [2, 2, 2, 2, 2], use a loop to check whether all elements are equal.
+
