@@ -188,12 +188,17 @@ console.log('cat' !== 'dog' && 5 > 3 || 12 / 4 === 3 && 9 < 4 || 8 === 8);
 // true && true || false && true || true
 // true || false || true
 
-console.log('apple' === 'apple' && 3 + 4 === 7 || 6 * 2 !== 12 && 10 - 5 === 5 || 'Java' !== 'java');
+// console.log('apple' === 'apple' && 3 + 4 === 7 || 6 * 2 !== 12 && 10 - 5 === 5 || 'Java' !== 'java');
 
 
 
 
 // 15 * 2 !== 30 && 5 === 5 || 'cat' === 'dog' && 7 / 2 === 3.5 || 20 > 10
+// false && true || false && true || true
+// false || false || true
+
+
+
 // 8 * 3 === 24 && 100 / 10 === 10 || 'red' !== 'green' && 9 + 1 === 10 || 5 === 5
 // 10 > 8 && 7 * 2 === 14 || 3 - 1 === 2 && 'sun' === 'sun' || 'hello' !== 'HELLO'
 // 0 !== '0' && 9 + 5 === 14 || 3 * 3 === 9 && 'apple' === 'apple' || 12 / 3 === 4
@@ -212,4 +217,29 @@ console.log('apple' === 'apple' && 3 + 4 === 7 || 6 * 2 !== 12 && 10 - 5 === 5 |
 // 5 + 2 === 7 && 'red' === 'red' || 3 * 4 === 12 && 'dog' !== 'cat' || 10 - 5 === 5
 // 7 * 3 === 21 && 12 / 4 === 3 || 5 + 6 === 11 && 'blue' !== 'green' || 'yes' !== 'YES'
 // 'false' === false && 4 * 2 === 8 || 3 - 2 === 1 && 10 / 5 === 2 || 'a' !== 'A'
-// 6 + 6 === 12 && 'yellow' === 'yellow' || 8 !== 8 && 3 * 3 === 9 || 'hello' !== 'HELLO'
+// 6 + 6 === 12 && 'yellow' === 'yellow' || 8 !== 8 && 3 * 3 === 9 || 'hello' !== 'HELLO''
+
+
+
+
+
+
+
+
+
+
+
+var num = 2;
+
+console.log(++num + num++ + num++ + num++ + num++ + num++ + ++num + ++num , 3 + 3 + 4 + 5 + 6 + 7 + 9 + 10);
+
+
+// ++num + num++ + num++ + num++ + num++ + num++ + ++num + ++num
+// 3 + 3 + 4 + 5 + 6 + 7 + 9 + 10
+
+
+
+
+
+
+
