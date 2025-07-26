@@ -77,17 +77,138 @@
 // global variable
 
 
-var username = "abdullah"
-var age = 21
+// var username = "abdullah"
+// var age = 21
 
-function greetUser(fullname){
-    var lastName = "khan" // local varibale
-    console.log("hello " + fullname + " " + lastName);
-    console.log(age);
+// function greetUser(fullname){
+//     var lastName = "khan" // local varibale
+//     console.log("hello " + fullname + " " + lastName);
+//     console.log(age);
+    
+// }
+
+
+// greetUser(username)
+
+
+
+
+
+
+
+
+
+
+
+
+var age = 21;
+
+function greetUser(username){
+    var localVar = "test"
+    console.log("hello " + username);
+    return "hello return " + username + " " + age + " " + localVar;
+}
+
+
+// greetUser("abdullah")
+// greetUser("usman")
+// greetUser('ammar')
+// greetUser("affan")
+// greetUser()
+
+// var fullname = "usman"
+// var myfunc = greetUser(fullname);
+// console.log(myfunc);
+
+
+// var username = prompt("enter your name");
+
+// console.log(username);
+
+
+
+
+
+// method
+// function
+
+// var heading = document.querySelector("#heading-one")
+
+// // hello world | changed through javascript
+// function greetUser(){
+//     console.log(heading.innerHTML);
+//     if(heading.innerHTML === "hello world"){
+//         heading.innerHTML = "changed"
+//         heading.style.backgroundColor = "red"
+//         heading.style.color = "white"
+//     } else {
+//         heading.innerHTML = "hello world"
+//         heading.style.backgroundColor = "white"
+//         heading.style.color = "black"
+//     }
+    
+    
+// }
+
+
+
+
+
+
+
+
+
+
+
+var fullnameInput = document.querySelector("#fullname");
+var passwordInput = document.querySelector("#password")
+var fullnameResult = document.querySelector("#result-fullname")
+var passwordresult = document.querySelector("#result-password")
+
+
+function getVal(){
+    console.log(fullnameInput.value);
+    console.log(passwordInput.value);
+
+    fullnameResult.innerHTML = fullnameInput.value
+    passwordresult.innerHTML = passwordInput.value
+    
     
 }
 
 
-greetUser(username)
+
+
+
+
+// function checkTemperature(temperature){
+//     if(temperature > 30){
+//         return "Hot"
+//     } else if(temperature < 10){
+//         return "Cold"
+//     } else {
+//         return "Normal"
+//     }    
+// }
+
+
+// console.log(checkTemperature());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
