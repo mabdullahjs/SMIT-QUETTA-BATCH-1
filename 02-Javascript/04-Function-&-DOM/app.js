@@ -101,13 +101,13 @@
 
 
 
-var age = 21;
+// var age = 21;
 
-function greetUser(username){
-    var localVar = "test"
-    console.log("hello " + username);
-    return "hello return " + username + " " + age + " " + localVar;
-}
+// function greetUser(username){
+//     var localVar = "test"
+//     console.log("hello " + username);
+//     return "hello return " + username + " " + age + " " + localVar;
+// }
 
 
 // greetUser("abdullah")
@@ -160,21 +160,21 @@ function greetUser(username){
 
 
 
-var fullnameInput = document.querySelector("#fullname");
-var passwordInput = document.querySelector("#password")
-var fullnameResult = document.querySelector("#result-fullname")
-var passwordresult = document.querySelector("#result-password")
+// var fullnameInput = document.querySelector("#fullname");
+// var passwordInput = document.querySelector("#password")
+// var fullnameResult = document.querySelector("#result-fullname")
+// var passwordresult = document.querySelector("#result-password")
 
 
-function getVal(){
-    console.log(fullnameInput.value);
-    console.log(passwordInput.value);
+// function getVal(){
+//     console.log(fullnameInput.value);
+//     console.log(passwordInput.value);
 
-    fullnameResult.innerHTML = fullnameInput.value
-    passwordresult.innerHTML = passwordInput.value
+//     fullnameResult.innerHTML = fullnameInput.value
+//     passwordresult.innerHTML = passwordInput.value
     
     
-}
+// }
 
 
 
@@ -204,6 +204,56 @@ function getVal(){
 
 
 
+
+
+
+
+
+// 4 form field banaingi. 4 subjects ka number user daiga. total marks 400. button ka click paa uska obtained marks, percentage and grade.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var fullname = document.querySelector("#fullname");
+var rollNumber = document.querySelector("#rollNumber");
+var subjectOne = document.querySelector("#subjectOne");
+var subjectTwo = document.querySelector("#subjectTwo");
+var subjectThree = document.querySelector("#subjectThree");
+var subjectFour = document.querySelector("#subjectFour");
+var result = document.querySelector("#result");
+
+
+function generateresult(){
+    var totalMarks = 400;
+    var obtainedMarks = +subjectFour.value + +subjectThree.value + +subjectTwo.value + +subjectOne.value
+    var percentage = obtainedMarks / totalMarks * 100;
+
+    var finalMessage = fullname.value + " with roll number (" + rollNumber.value + ") has obtained " + obtainedMarks + " marks out of " + totalMarks + " and percentage is " + percentage + "%"
+    
+    result.innerHTML = finalMessage
+    
+    
+}
 
 
 
