@@ -14,30 +14,30 @@
 // console.log(username.toLowerCase());
 // console.log(username.toUpperCase());
 
-let cities = [
-    "karachi",
-    "lahore",
-    "islamabad",
-    "rawalpindi",
-    "faisalabad",
-    "multan",
-    "peshawar",
-    "quetta",
-    "hyderabad",
-    "sialkot",
-    "gujranwala",
-    "bahawalpur",
-    "sukkur",
-    "abbottabad",
-    "muzaffarabad"
-];
+// let cities = [
+//     "karachi",
+//     "lahore",
+//     "islamabad",
+//     "rawalpindi",
+//     "faisalabad",
+//     "multan",
+//     "peshawar",
+//     "quetta",
+//     "hyderabad",
+//     "sialkot",
+//     "gujranwala",
+//     "bahawalpur",
+//     "sukkur",
+//     "abbottabad",
+//     "muzaffarabad"
+// ];
 
 
-const input = document.querySelector("#city-input");
-const h1 = document.querySelector("#result");
+// const input = document.querySelector("#city-input");
+// const h1 = document.querySelector("#result");
 
 
-function checkCity(){
+// function checkCity(){
 
 
     // let available = false
@@ -68,4 +68,35 @@ function checkCity(){
     // } else {
     //     h1.innerHTML = "Maalik tum hi zindagi jee rha ho."
     // }
-}
+// }
+
+
+
+// length
+let username = "Muhammad Abdullah Khan"
+// console.log(username.length);
+
+
+
+// charAt
+// console.log(username[2]);
+// console.log(username.charAt(2));
+
+
+
+// indexOf
+// console.log(username.indexOf("w"));
+
+// slice
+// console.log(username.slice(8 , 12));
+
+// replace
+// let str = "Babar is the greatest of all time. Babar is a king. Babar king krlaiga."
+// console.log(str.replace("Babar" , "Kohli"));
+
+// // replaceall
+// console.log(str.replaceAll("Babar" , "Kohli"));
+
+// split
+
+
