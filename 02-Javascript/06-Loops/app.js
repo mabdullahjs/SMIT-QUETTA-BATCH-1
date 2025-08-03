@@ -239,3 +239,33 @@
 
 // todo app
 // loop array splice dom manipulation
+
+
+let sentence = "learning javascript is fun and rewarding!"
+// let vowel = 0
+// for(let i = 0; i < sentence.length; i++){
+//     // console.log(sentence[i]);
+
+//     if(sentence[i] === "a" || sentence[i] === "e" || sentence[i] === "i" || sentence[i] === "o" || sentence[i] === "u"){
+//         // console.log("vowel a bhai");
+//         vowel += 1;
+        
+//     }
+    
+// }
+
+// console.log(vowel);
+
+
+// function checkVowel(str){
+//     let vowel = 0
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u"){
+//             vowel += 1
+//         }
+//     }
+
+//     return vowel
+// }
+
+// console.log(checkVowel(sentence));
