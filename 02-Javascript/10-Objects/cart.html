@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .card {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello cart</h1>
+   <div class="container">
+        
+    </div>
+
+
+    <script>
+        const cartItems = JSON.parse(localStorage.getItem('cartItem'))
+        const div = document.querySelector(".container");
+        for(let i = 0; i < cartItems.length; i++){
+            console.log(cartItems[i]);
+             div.innerHTML += `
+            <div class="card">
+                <h2>${cartItems[i].name}</h2>
+                <p>Quantity ${cartItems[i].quantity}</p>
+                <h3>$${cartItems[i].price}</h3>
+                <button onclick="addtocart(${i})">add to cart</button>
+            </div>
+    `;
+            
+        }
+        
+    </script>
+</body>
+</html>
