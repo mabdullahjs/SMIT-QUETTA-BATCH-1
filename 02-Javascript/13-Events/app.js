@@ -71,31 +71,27 @@
 // imgThree.addEventListener("click", (event) => {
 //     // console.log(event.target);
 //     event.stopPropagation()
-    
+
 //   console.log("li clicked");
 // });
-
-
 
 // link.addEventListener("click" , (event)=>{
 //     event.stopPropagation()
 //     event.preventDefault()
 //     console.log("testing");
-    
-// })
 
+// })
 
 // ul.addEventListener("click" , (event)=>{
 //     console.log(event.target.tagName);
 //     console.log(event.target.parentNode);
-    
+
 //     if(event.target.tagName === "IMG"){
 //         event.target.parentNode.remove()
 //         return
 
 //     }
-    
-    
+
 // })
 
 // onsubmit
@@ -104,11 +100,34 @@
 // const lastName = document.querySelector("#lastname");
 // const form = document.querySelector("#form");
 
-
-
 // form.addEventListener("submit" , (event)=>{
 //     event.preventDefault()
 //     console.log(firstName.value);
 //     console.log(lastName.value);
-    
+
 // })
+
+// synchronous
+// asynchronous
+
+// console.log("01");
+// console.log("02");
+// console.log("03");
+// setTimeout(() => {
+//   console.log("04");
+// }, 0);
+// console.log("05");
+
+
+
+// setimeout
+// setinterval
+// promises
+// async await
+// fetch
+// axios
+
+setTimeout(() => {
+  console.log("04");
+}, 0);
+
