@@ -19,8 +19,8 @@
 // Higher-order function //c
 // CallBack //c
 // Promises //c
-// Ternary Operator
-// modules
+// Ternary Operator //c
+// modules // firebase ma prhainga
 
 // console.log("hello world");
 
