@@ -9,8 +9,8 @@ import { db } from "./firebaseconfig.js";
 let uploadImage;
 var myWidget = cloudinary.createUploadWidget(
   {
-    cloudName: "ddtkw7ry2",
-    uploadPreset: "quetta-batch",
+    cloudName: "apna cloud name dalna ha",
+    uploadPreset: "apna upload preset dalna",
   },
   (error, result) => {
     if (!error && result && result.event === "success") {
