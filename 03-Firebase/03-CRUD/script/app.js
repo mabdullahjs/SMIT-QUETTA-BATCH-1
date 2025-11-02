@@ -4,19 +4,55 @@ import {
   Timestamp,
   getDocs,
   query,
-  orderBy
+  orderBy,
+  where,
 } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js";
 import { db } from "./firebaseconfig.js";
+import {
+  signOut,
+  onAuthStateChanged,
+} from "https://www.gstatic.com/firebasejs/12.4.0/firebase-auth.js";
+import { auth } from "./firebaseconfig.js";
+
+let userUID;
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    console.log("logged in user UID ==>", uid);
+    getDataFromDB(uid);
+    userUID = uid
+  } else {
+    window.location = "login.html";
+  }
+});
+
+const logoutBtn = document.querySelector(".logout-btn");
+
+logoutBtn.addEventListener("click", () => {
+  signOut(auth)
+    .then(() => {
+      window.location = "login.html";
+    })
+    .catch((error) => {
+      alert("error occured");
+    });
+});
 
 const form = document.querySelector(".form");
 const title = document.querySelector(".title");
 const description = document.querySelector(".description");
 const todoContainer = document.querySelector(".allTodos");
 
+
 const allTodo = [];
 
-async function getDataFromDB() {
-  const q = query(collection(db, "todos"), orderBy("time", "desc"));
+async function getDataFromDB(uid) {
+
+  const q = query(
+    collection(db, "todos"),
+    where("uid", "==", uid)
+   
+  );
   const querySnapshot = await getDocs(q);
   querySnapshot.forEach((doc) => {
     allTodo.push({ ...doc.data(), docid: doc.id });
@@ -25,8 +61,6 @@ async function getDataFromDB() {
   renderTodo(allTodo);
 }
 
-getDataFromDB();
-
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
@@ -34,6 +68,7 @@ form.addEventListener("submit", async (event) => {
     title: title.value,
     description: description.value,
     time: Timestamp.fromDate(new Date()),
+    uid: userUID,
   };
 
   try {

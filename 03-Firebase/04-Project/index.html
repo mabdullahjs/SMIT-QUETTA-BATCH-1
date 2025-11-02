@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Marketplace</title>
+  <link rel="stylesheet" href="./styles/home.css" />
+  <style>
+    .user-info{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Buy Sell / Corner</div>
+    <div class="nav-items">
+      <!-- If user is logged in, show profile + logout, else show login -->
+      <div class="user-info">
+        <img src="#" alt="User" class="user-img" />
+        <button class="logout-btn" id="logout-btn">Logout</button>
+        <button class="logout-btn"><a href="./upload.html">Upload Product</a></button>
+
+      </div>
+      <div class="login">
+        <button class="login-btn"><a href="./login.html">login</a></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="cards-container">
+      <!-- Sample Car Card -->
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3mMqcRYCJDeEBVysy-BNQ07cXezqh7bf-LQ&s" alt="Car 1" class="card-img" />
+        <div class="card-content">
+          <h3>Honda Civic 2020</h3>
+          <p>Well maintained, single owner, 20,000 km driven.</p>
+          <p class="price">$18,000</p>
+          <button class="more-info-btn">More Info</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3mMqcRYCJDeEBVysy-BNQ07cXezqh7bf-LQ&s" alt="Car 2" class="card-img" />
+        <div class="card-content">
+          <h3>Toyota Corolla 2019</h3>
+          <p>Excellent condition, fully serviced, 30,000 km driven.</p>
+          <p class="price">$15,500</p>
+          <button class="more-info-btn">More Info</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3mMqcRYCJDeEBVysy-BNQ07cXezqh7bf-LQ&s" alt="Car 3" class="card-img" />
+        <div class="card-content">
+          <h3>Ford Mustang 2018</h3>
+          <p>Sporty coupe, 25,000 km, like new.</p>
+          <p class="price">$28,000</p>
+          <button class="more-info-btn">More Info</button>
+        </div>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </div>
+  </main>
+  <script type="module" src="./script/app.js"></script>
+</body>
+</html>
