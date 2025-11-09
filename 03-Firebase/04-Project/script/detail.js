@@ -12,3 +12,9 @@ console.log(itemID);
 async function getData(){
     
 }
+
+
+// single id sa data mangwayenga
+// single user page jisma sirf uska data show hoga
+// delete krainga
+// update
