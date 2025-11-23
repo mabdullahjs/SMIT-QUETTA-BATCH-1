@@ -111,7 +111,7 @@ function App() {
 
 
       <div className="parent">
-        {todo.map((item, index) => {
+        {todo.length > 0 ? todo.map((item, index) => {
           return <div key={index} className="children">
             <h1>title: {item.title}</h1>
             <h1>desc: {item.description}</h1>
@@ -119,7 +119,7 @@ function App() {
             <button onClick={()=>deleteTodo(index)}>delete</button>
             <button onClick={()=> editTodo(index)}>edit</button>
           </div>
-        })}
+        }) : <h1>No todo found</h1>}
 
       </div>
     </>
