@@ -1,0 +1,147 @@
+const cars = [
+    {
+      id: 1,
+      title: "Sleek black sedan",
+      imageUrl: "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg",
+      rating: 4.5,
+      trips: 22,
+      pricePerDay: 50,
+      availableDaysPerMonth: 20,
+      discountPercentage: 5
+    },
+    {
+      id: 2,
+      title: "White luxury SUV",
+      imageUrl: "https://images.pexels.com/photos/3225530/pexels-photo-3225530.jpeg",
+      rating: 4.8,
+      trips: 18,
+      pricePerDay: 80,
+      availableDaysPerMonth: 18,
+      discountPercentage: 8
+    },
+    {
+      id: 3,
+      title: "Red sport coupe",
+      imageUrl: "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg",
+      rating: 4.2,
+      trips: 9,
+      pricePerDay: 120,
+      availableDaysPerMonth: 12,
+      discountPercentage: 0
+    },
+    {
+      id: 4,
+      title: "Blue compact hatchback",
+      imageUrl: "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      rating: 4.0,
+      trips: 30,
+      pricePerDay: 35,
+      availableDaysPerMonth: 22,
+      discountPercentage: 3
+    },
+    {
+      id: 5,
+      title: "Silver SUV on highway",
+      imageUrl: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg",
+      rating: 4.7,
+      trips: 15,
+      pricePerDay: 75,
+      availableDaysPerMonth: 17,
+      discountPercentage: 7
+    },
+    {
+      id: 6,
+      title: "Yellow sports car",
+      imageUrl: "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      rating: 4.3,
+      trips: 12,
+      pricePerDay: 110,
+      availableDaysPerMonth: 10,
+      discountPercentage: 0
+    },
+    {
+      id: 7,
+      title: "Urban sedan parked",
+      imageUrl: "https://images.pexels.com/photos/340516/pexels-photo-340516.jpeg",
+      rating: 4.6,
+      trips: 27,
+      pricePerDay: 45,
+      availableDaysPerMonth: 20,
+      discountPercentage: 5
+    },
+    {
+      id: 8,
+      title: "White electric city car",
+      imageUrl: "https://images.pexels.com/photos/603172/pexels-photo-603172.jpeg",
+      rating: 4.9,
+      trips: 8,
+      pricePerDay: 65,
+      availableDaysPerMonth: 15,
+      discountPercentage: 6
+    },
+    {
+      id: 9,
+      title: "Black luxury coupe",
+      imageUrl: "https://images.pexels.com/photos/126407/pexels-photo-126407.jpeg",
+      rating: 4.4,
+      trips: 14,
+      pricePerDay: 100,
+      availableDaysPerMonth: 13,
+      discountPercentage: 4
+    },
+    {
+      id: 10,
+      title: "Grey compact hatchback",
+      imageUrl: "https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg",
+      rating: 4.1,
+      trips: 33,
+      pricePerDay: 40,
+      availableDaysPerMonth: 23,
+      discountPercentage: 2
+    },
+
+
+    { id: 11, title: "Red convertible", imageUrl: "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg", rating: 4.2, trips: 7, pricePerDay: 130, availableDaysPerMonth: 9, discountPercentage: 0 },
+    { id: 12, title: "Black SUV city driver", imageUrl: "https://images.pexels.com/photos/3225530/pexels-photo-3225530.jpeg", rating: 4.7, trips: 19, pricePerDay: 85, availableDaysPerMonth: 16, discountPercentage: 7 },
+    { id: 13, title: "White sedan urban", imageUrl: "https://images.pexels.com/photos/340516/pexels-photo-340516.jpeg", rating: 4.5, trips: 24, pricePerDay: 48, availableDaysPerMonth: 21, discountPercentage: 4 },
+    { id: 14, title: "Silver compact", imageUrl: "https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg", rating: 4.0, trips: 29, pricePerDay: 38, availableDaysPerMonth: 22, discountPercentage: 3 },
+    { id: 15, title: "Blue hatchback", imageUrl: "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg", rating: 4.3, trips: 26, pricePerDay: 42, availableDaysPerMonth: 20, discountPercentage: 5 },
+    { id: 16, title: "White SUV countryside", imageUrl: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg", rating: 4.6, trips: 16, pricePerDay: 78, availableDaysPerMonth: 15, discountPercentage: 6 },
+    { id: 17, title: "Black compact city", imageUrl: "https://images.pexels.com/photos/603172/pexels-photo-603172.jpeg", rating: 4.4, trips: 30, pricePerDay: 44, availableDaysPerMonth: 24, discountPercentage: 2 },
+    { id: 18, title: "Red hatchback", imageUrl: "https://images.pexels.com/photos/126407/pexels-photo-126407.jpeg", rating: 4.2, trips: 20, pricePerDay: 46, availableDaysPerMonth: 19, discountPercentage: 3 },
+    { id: 19, title: "Grey sedan rural", imageUrl: "https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg", rating: 4.1, trips: 28, pricePerDay: 50, availableDaysPerMonth: 22, discountPercentage: 4 },
+    { id: 20, title: "Yellow compact car", imageUrl: "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg", rating: 4.0, trips: 31, pricePerDay: 39, availableDaysPerMonth: 23, discountPercentage: 2 },
+    { id: 21, title: "Silver luxury sedan", imageUrl: "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg", rating: 4.6, trips: 23, pricePerDay: 55, availableDaysPerMonth: 18, discountPercentage: 5 },
+    { id: 22, title: "White city sedan", imageUrl: "https://images.pexels.com/photos/3225530/pexels-photo-3225530.jpeg", rating: 4.7, trips: 20, pricePerDay: 52, availableDaysPerMonth: 20, discountPercentage: 4 },
+    { id: 23, title: "Black sports coupe", imageUrl: "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg", rating: 4.3, trips: 10, pricePerDay: 115, availableDaysPerMonth: 11, discountPercentage: 0 },
+    { id: 24, title: "Blue SUV near forest", imageUrl: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg", rating: 4.5, trips: 17, pricePerDay: 82, availableDaysPerMonth: 14, discountPercentage: 7 },
+    { id: 25, title: "Grey compact hatch", imageUrl: "https://images.pexels.com/photos/603172/pexels-photo-603172.jpeg", rating: 4.2, trips: 25, pricePerDay: 43, availableDaysPerMonth: 21, discountPercentage: 3 },
+    { id: 26, title: "White convertible", imageUrl: "https://images.pexels.com/photos/126407/pexels-photo-126407.jpeg", rating: 4.4, trips: 12, pricePerDay: 125, availableDaysPerMonth: 10, discountPercentage: 1 },
+    { id: 27, title: "Black sedan night city", imageUrl: "https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg", rating: 4.5, trips: 21, pricePerDay: 48, availableDaysPerMonth: 19, discountPercentage: 4 },
+    { id: 28, title: "Silver hatchback", imageUrl: "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg", rating: 4.0, trips: 29, pricePerDay: 37, availableDaysPerMonth: 22, discountPercentage: 2 },
+    { id: 29, title: "White SUV urban", imageUrl: "https://images.pexels.com/photos/3225530/pexels-photo-3225530.jpeg", rating: 4.7, trips: 19, pricePerDay: 79, availableDaysPerMonth: 17, discountPercentage: 6 },
+    { id: 30, title: "Blue sedan countryside", imageUrl: "https://images.pexels.com/photos/340516/pexels-photo-340516.jpeg", rating: 4.3, trips: 26, pricePerDay: 49, availableDaysPerMonth: 20, discountPercentage: 5 },
+    { id: 31, title: "Grey SUV front view", imageUrl: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg", rating: 4.6, trips: 18, pricePerDay: 83, availableDaysPerMonth: 15, discountPercentage: 7 },
+    { id: 32, title: "Black city compact", imageUrl: "https://images.pexels.com/photos/603172/pexels-photo-603172.jpeg", rating: 4.2, trips: 27, pricePerDay: 45, availableDaysPerMonth: 22, discountPercentage: 3 },
+    { id: 33, title: "Red hatchback sunset", imageUrl: "https://images.pexels.com/photos/126407/pexels-photo-126407.jpeg", rating: 4.1, trips: 24, pricePerDay: 47, availableDaysPerMonth: 21, discountPercentage: 4 },
+    { id: 34, title: "White sedan parked", imageUrl: "https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg", rating: 4.5, trips: 22, pricePerDay: 50, availableDaysPerMonth: 20, discountPercentage: 5 },
+    { id: 35, title: "Silver coupe urban", imageUrl: "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg", rating: 4.3, trips: 20, pricePerDay: 60, availableDaysPerMonth: 18, discountPercentage: 6 },
+    { id: 36, title: "White hatchback countryside", imageUrl: "https://images.pexels.com/photos/3225530/pexels-photo-3225530.jpeg", rating: 4.4, trips: 28, pricePerDay: 42, availableDaysPerMonth: 23, discountPercentage: 2 },
+    { id: 37, title: "Black sports sedan", imageUrl: "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg", rating: 4.6, trips: 14, pricePerDay: 110, availableDaysPerMonth: 13, discountPercentage: 0 },
+    { id: 38, title: "Blue SUV road trip", imageUrl: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg", rating: 4.7, trips: 16, pricePerDay: 85, availableDaysPerMonth: 15, discountPercentage: 7 },
+    { id: 39, title: "Grey compact city", imageUrl: "https://images.pexels.com/photos/603172/pexels-photo-603172.jpeg", rating: 4.1, trips: 32, pricePerDay: 39, availableDaysPerMonth: 24, discountPercentage: 3 },
+    { id: 40, title: "White sedan morning", imageUrl: "https://images.pexels.com/photos/340516/pexels-photo-340516.jpeg", rating: 4.5, trips: 25, pricePerDay: 53, availableDaysPerMonth: 20, discountPercentage: 4 },
+    { id: 41, title: "Black luxury coupe night", imageUrl: "https://images.pexels.com/photos/126407/pexels-photo-126407.jpeg", rating: 4.4, trips: 15, pricePerDay: 105, availableDaysPerMonth: 12, discountPercentage: 1 },
+    { id: 42, title: "Silver compact rural", imageUrl: "https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg", rating: 4.2, trips: 30, pricePerDay: 40, availableDaysPerMonth: 22, discountPercentage: 2 },
+    { id: 43, title: "White SUV night city", imageUrl: "https://images.pexels.com/photos/3225530/pexels-photo-3225530.jpeg", rating: 4.8, trips: 18, pricePerDay: 90, availableDaysPerMonth: 16, discountPercentage: 8 },
+    { id: 44, title: "Blue sedan coastal drive", imageUrl: "https://images.pexels.com/photos/340516/pexels-photo-340516.jpeg", rating: 4.3, trips: 23, pricePerDay: 55, availableDaysPerMonth: 19, discountPercentage: 5 },
+    { id: 45, title: "Grey SUV urban", imageUrl: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg", rating: 4.6, trips: 17, pricePerDay: 80, availableDaysPerMonth: 15, discountPercentage: 6 },
+    { id: 46, title: "Black hatchback city", imageUrl: "https://images.pexels.com/photos/603172/pexels-photo-603172.jpeg", rating: 4.2, trips: 29, pricePerDay: 42, availableDaysPerMonth: 21, discountPercentage: 3 },
+    { id: 47, title: "Red convertible countryside", imageUrl: "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg", rating: 4.1, trips: 13, pricePerDay: 130, availableDaysPerMonth: 11, discountPercentage: 0 },
+    { id: 48, title: "White sedan downtown", imageUrl: "https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg", rating: 4.4, trips: 26, pricePerDay: 50, availableDaysPerMonth: 20, discountPercentage: 4 },
+    { id: 49, title: "Silver sports sedan", imageUrl: "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg", rating: 4.5, trips: 18, pricePerDay: 95, availableDaysPerMonth: 14, discountPercentage: 5 },
+    { id: 50, title: "White compact hatchback", imageUrl: "https://images.pexels.com/photos/603172/pexels-photo-603172.jpeg", rating: 4.0, trips: 31, pricePerDay: 38, availableDaysPerMonth: 23, discountPercentage: 2 }
+  ];
+
+
+  export default cars

@@ -1,0 +1,5 @@
+tailwind css integration 
+bootstrap homework
+turo clone
+react icons
+product api + daisy ui
