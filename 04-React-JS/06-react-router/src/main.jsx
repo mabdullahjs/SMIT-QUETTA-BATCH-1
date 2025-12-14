@@ -12,6 +12,7 @@ import Student from './pages/Dashboard/Student.jsx';
 import Campus from './pages/Dashboard/Campus.jsx';
 import Manager from './pages/Dashboard/Manager.jsx';
 import Courses from './pages/Dashboard/Courses.jsx';
+import Product from './pages/Product.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='service' element={<Services />} />
+      <Route path='product/:id' element={<Product />} />
       <Route path='dashboard' element={<Dashboard />}>
         <Route index element={<Student />} />
         <Route path='campus' element={<Campus />} />
