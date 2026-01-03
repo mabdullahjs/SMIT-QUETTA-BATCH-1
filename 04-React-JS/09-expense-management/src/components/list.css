@@ -1,0 +1,31 @@
+
+
+.expense-card {
+  width: 280px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.remarks {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.type {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
