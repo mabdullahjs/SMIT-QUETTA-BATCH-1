@@ -1,65 +1,30 @@
-import { onAuthStateChanged } from "firebase/auth";
-import { collection, getDocs, query, where } from "firebase/firestore";
-import { useEffect, useState } from "react";
-import { auth, db } from "../config/firebase/firebaseconfig";
-import { useNavigate } from "react-router";
+import { useSelector } from "react-redux";
+import { Navigate } from "react-router";
 
-// role = ["Admin"] or ["Student"]
 const ProtectedRoutes = ({ component, role }) => {
-  const [loading, setLoading] = useState(true);
-  const [isAllowed, setIsAllowed] = useState(false);
-  const navigate = useNavigate()
+  const { isAuthenticated, loading, role: userRole } = useSelector((state) => state.auth);
 
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, async (user) => {
-      if (!user) {
-        setIsAllowed(false);
-        setLoading(false);
-        navigate('login')
-        return;
-      }
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <h1>Loading...</h1>
+      </div>
+    );
+  }
 
-      try {
-        const q = query(
-          collection(db, "user"),
-          where("uid", "==", user.uid)
-        );
+  if (!isAuthenticated) {
+    return <Navigate to="/login" replace />;
+  }
 
-        const snapshot = await getDocs(q);
+  if (!role.includes(userRole)) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <h1>Access Denied - Insufficient Permissions</h1>
+      </div>
+    );
+  }
 
-        if (snapshot.empty) {
-          setIsAllowed(false);
-          setLoading(false);
-          return;
-        }
-
-        const userData = snapshot.docs[0].data();
-
-        if (role.includes(userData.role)) {
-          setIsAllowed(true);
-        } else {
-          setIsAllowed(false);
-        }
-
-        setLoading(false);
-      } catch (err) {
-        console.error(err);
-        setIsAllowed(false);
-        setLoading(false);
-      }
-    });
-
-    return () => unsubscribe();
-  }, [role]);
-
-  if (loading) return <h1>Loading...</h1>;
-
-  return isAllowed ? component : <h1>Not Allowed</h1>;
+  return component;
 };
 
 export default ProtectedRoutes;
-
-
-
-
-// Higher order components HOC

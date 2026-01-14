@@ -1,7 +1,7 @@
 import { signOut } from 'firebase/auth';
 import React from 'react'
 import { auth } from '../config/firebase/firebaseconfig';
-import { useNavigate } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 
 const Navbar = () => {
 
@@ -15,6 +15,10 @@ const Navbar = () => {
     }
     return (
         <>
+        <Link to={'/'}>Dashboard</Link>
+        <Link to={'profile'}>Profile</Link>
+        <Link to={'courses'}>Course</Link>
+        <Link to={'students'}>student</Link>
             <button onClick={logout}>Logout</button>
         </>
     )

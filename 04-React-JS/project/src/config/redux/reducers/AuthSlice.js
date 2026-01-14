@@ -1,27 +1,32 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// const data = "firebase sa data mangwalia"
-
 export const authSlice = createSlice({
   name: "Auth",
   initialState: {
-    user: false,
-    role: "Admin",
+    uid: '',
+    role: '', // 'Admin' or 'Student'
+    isAuthenticated: false,
+    loading: true,
   },
   reducers: {
-    setLoginStatus: (state, action) => {
-      state.user = action.payload; // true / false
-    },
-    setRole: (state, action) => {
-      state.role = action.payload; // Admin / Student
+    setUser: (state, action) => {
+      state.uid = action.payload.uid;
+      state.role = action.payload.role;
+      state.isAuthenticated = true;
+      state.loading = false;
     },
     logout: (state) => {
-      state.user = false;
-      state.role = "Admin";
+      state.uid = '';
+      state.role = '';
+      state.isAuthenticated = false;
+      state.loading = false;
     },
+    setAuthLoading: (state, action) => {
+      state.loading = action.payload;
+    }
   },
 });
 
-export const { setLoginStatus, setRole, logout } = authSlice.actions;
+export const { setUser, logout, setAuthLoading } = authSlice.actions;
 
 export default authSlice.reducer;
