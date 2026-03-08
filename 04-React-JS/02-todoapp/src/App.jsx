@@ -97,6 +97,13 @@ function App() {
   }
   const editTodo = (index)=>{
     console.log("todo edited" , index);
+    const editTitle = prompt("Enter the Title");
+    const editDesc = prompt("Enter the Desc");
+       const updatedTodos = [...todo]
+    todo[index].title = editTitle;
+    setTodo(updatedTodos);
+  }
+
     
   }
   return (

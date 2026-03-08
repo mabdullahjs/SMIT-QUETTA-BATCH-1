@@ -1,10 +1,9 @@
+import Link from "next/link";
 import React from "react";
 
 const User = async () => {
   const data = await fetch("https://jsonplaceholder.typicode.com/users" , {
-    next: {
-        revalidate: 5000
-    }
+    cache: "no-store"
   });
 //   const data = await fetch("https://jsonplaceholder.typicode.com/users" , {
 //     cache: "no-store"
@@ -15,7 +14,9 @@ const User = async () => {
     <>
     <div>User {new Date().toLocaleTimeString()}</div>
     {users.map((item:{name: string; id: number}) => {
-        return <p key={item.id}>{item.name}</p>
+        return <div key={item.id}>
+          <Link href={`/user/${item.id}`} className="cursor-pointer" >{item.name}</Link>
+        </div>
     })}
     </>
   );

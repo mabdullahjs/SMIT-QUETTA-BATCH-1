@@ -1,10 +1,7 @@
 import type { NextConfig } from "next";
-// https://i.imgflip.com/30b1gx.jpg
 
 const nextConfig: NextConfig = {
-  images: {
-    domains: ["i.imgflip.com"],
-  },
+  /* config options here */
 };
 
 export default nextConfig;

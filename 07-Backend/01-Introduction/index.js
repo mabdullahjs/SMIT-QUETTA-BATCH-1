@@ -9,6 +9,8 @@ const port = 3000
 app.use(cors())
 app.use(express.json())
 
+app.use()
+
 function checkmiddleware(req , res , next) {
     console.log("middleware check");
     next()
